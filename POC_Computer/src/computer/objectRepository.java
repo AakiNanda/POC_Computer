@@ -29,7 +29,7 @@ public class objectRepository {
 	public objectRepository() {
 		
 		// 	Text Elements 
-		txt_ComputerSearch = "searchbox";	
+		txt_ComputerSearch = "#searchbox";	
 		txt_ComputerName = "name";
 		txt_IntroducedDate = "introduced";
 		txt_DiscontinuedDate = "discontinued";

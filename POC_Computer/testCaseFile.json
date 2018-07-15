@@ -1,6 +1,7 @@
 { 
 	"Test Case Bed":
-	[ 			
+	[
+		 			
 		{
 		 	"TestCaseName" : "TC1 - Verify user is able to create new computer record in the application",
 		 	"TestScenarioMethod":"R_URL,COMPUTERSEARCH,COMPUTERDETAIL", 
@@ -134,7 +135,21 @@
 			"Validation" : "ISEXIST",
 			"Element" : "btn_SaveComputer",
 			"DefaultValue": ""
+		}, 
+		{
+		 	"TestCaseName" : "TC10 - Verify cancel button functionality on add a computer screen",
+		 	"TestScenarioMethod":"R_URL,COMPUTERSEARCH,COMPUTERDETAIL", 
+			"SearchComputerName" : "",
+			"ComputerSearchAction" : "ADDCOMPUTER",
+			"ComputerName" : "BackeBase-Paul",
+			"IntroducedDate" : "",
+			"DiscontinuedDate" : "",
+			"CompanyName" : "",
+			"ComputerEditPageAction" : "CANCEL",
+			"ValidationPoint" : "POST_COMPUTER_EDIT_PAGE_ACTION",
+			"Validation" : "ISEXIST",
+			"Element" : "txt_ComputerSearch",
+			"DefaultValue": ""
 		}
-		
 	]
 }

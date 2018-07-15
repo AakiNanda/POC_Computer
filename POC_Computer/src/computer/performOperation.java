@@ -17,7 +17,7 @@ public class performOperation {
 			String validationPoint, String validation, String element, String defaultValue) {
 		
 		if (! (computerName.isEmpty())) {
-			driver.findElement(By.id(objRepo.getObjectValue("txt_ComputerSearch"))).sendKeys(computerName);		
+			driver.findElement(By.cssSelector(objRepo.getObjectValue("txt_ComputerSearch"))).sendKeys(computerName);		
 			driver.findElement(By.id(objRepo.getObjectValue("btn_FilterByName"))).click();
 		}
 		
