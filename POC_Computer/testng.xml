@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-class Suite" parallel="methods" thread-count="2">
+    <test name="Test Bed">
+        <classes>
+            <class name="computer.executionDriver" />
+        </classes>
+    </test>
+</suite>
+

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test-class_Suite">
+              <span class="suite-name border-failed">Test-class Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test-class_Suite">
+                    <span>D:\tool\Projects\POC_Computer\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test-class_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test-class_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test-class_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test-class_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test-class_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test-class_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test-class_Suite" class="hide-methods failed suite-Test-class_Suite"> (hide)</a> <!-- hide-methods failed suite-Test-class_Suite -->
+                      <a href="#" panel-name="suite-Test-class_Suite" class="show-methods failed suite-Test-class_Suite"> (show)</a> <!-- show-methods failed suite-Test-class_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test-class_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)">crudOperationOnChrome(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test-class_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test-class_Suite" class="hide-methods passed suite-Test-class_Suite"> (hide)</a> <!-- hide-methods passed suite-Test-class_Suite -->
+                      <a href="#" panel-name="suite-Test-class_Suite" class="show-methods passed suite-Test-class_Suite"> (show)</a> <!-- show-methods passed suite-Test-class_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Test-class_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)">crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)">crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)">crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)">crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)">crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)">crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)">crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)">crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)">crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)">crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)">crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)">crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)">crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)">crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)">crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)">crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test-class_Suite" title="computer.executionDriver" hash-for-method="crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)">crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test-class_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test-class_Suite" class="panel Test-class_Suite">
+          <div class="suite-Test-class_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">computer.executionDriver</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)">
+                  </a> <!-- crudOperationOnChrome(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, BackeBase-Aakash Nanda, EDITCOMPUTER, , , , , DELETE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer has been deleted)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#main &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(1) &gt; a&quot;}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;DESKTOP-TQRIKEL&apos;, ip: &apos;10.0.0.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\aakas\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 9816331d9e52e29882e3f813f24989a3
+*** Element info: {Using=css selector, value=#main &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(1) &gt; a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at computer.performOperation.computerSearchPage(performOperation.java:31)
+	at computer.executionDriver.crudOperationOnChrome(executionDriver.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test-class_Suite-class-failed -->
+          <div class="suite-Test-class_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">computer.executionDriver</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)">
+                  </a> <!-- crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, , , , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)">
+                  </a> <!-- crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Aakash, 2018-07-10, 2024-07-10, Apple Inc., SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Aakash has been created)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)">
+                  </a> <!-- crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, BackeBase-Aakash, EDITCOMPUTER, BackeBase-Aakash Nanda, 2018-07-11, 2028-07-05, IBM, SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Aakash Nanda has been updated)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)">
+                  </a> <!-- crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEARCH, BackeBase-Aakash Nanda, , , , , , , POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH, DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE, lnk_ComputerName,lnk_IntroducedDate,lnk_DiscontinuedDate,lnk_Company, BackeBase-Aakash Nanda,11 Jul 2018,05 Jul 2028,IBM)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)">
+                  </a> <!-- crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date field is provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul, 2018-07-40, , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)">
+                  </a> <!-- crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMPUTERSEARCH, BackeBase-Aakash, , , , , , , POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH, DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE, lnk_ComputerName,lnk_IntroducedDate,lnk_DiscontinuedDate,lnk_Company, BackeBase-Aakash,10 Jul 2018,10 Jul 2024,Apple Inc.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)">
+                  </a> <!-- crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field is provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul, , 2018-17-40, , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)">
+                  </a> <!-- crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...) -->
+                  <span class="method-name">crudOperationOnChrome</span>
+                  <span class="parameters">(TC7 - Verify user is able to create new computer record with just computer name detail provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul$123, , , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Paul$123 has been created)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)">
+                  </a> <!-- crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMPUTERSEARCH, BackeBase-Aakash, , , , , , , POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH, DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE, lnk_ComputerName,lnk_IntroducedDate,lnk_DiscontinuedDate,lnk_Company, BackeBase-Aakash,10 Jul 2018,10 Jul 2024,Apple Inc.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)">
+                  </a> <!-- crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, , , , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)">
+                  </a> <!-- crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Aakash, 2018-07-10, 2024-07-10, Apple Inc., SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Aakash has been created)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)">
+                  </a> <!-- crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC7 - Verify user is able to create new computer record with just computer name detail provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul$123, , , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Paul$123 has been created)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)">
+                  </a> <!-- crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field is provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul, , 2018-17-40, , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)">
+                  </a> <!-- crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, BackeBase-Aakash Nanda, EDITCOMPUTER, , , , , DELETE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer has been deleted)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)">
+                  </a> <!-- crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, BackeBase-Aakash, EDITCOMPUTER, BackeBase-Aakash Nanda, 2018-07-11, 2028-07-05, IBM, SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, lbl_ConfirmationMsg, Done! Computer BackeBase-Aakash Nanda has been updated)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)">
+                  </a> <!-- crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEARCH, BackeBase-Aakash Nanda, , , , , , , POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH,POST_COMPUTER_SEARCH, DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE,DEFAULTVALUE, lnk_ComputerName,lnk_IntroducedDate,lnk_DiscontinuedDate,lnk_Company, BackeBase-Aakash Nanda,11 Jul 2018,05 Jul 2028,IBM)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)">
+                  </a> <!-- crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...) -->
+                  <span class="method-name">crudOperationOnFireFox</span>
+                  <span class="parameters">(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date field is provided in the application, R_URL,COMPUTERSEARCH,COMPUTERDETAIL, , ADDCOMPUTER, BackeBase-Paul, 2018-07-40, , , SAVE, POST_COMPUTER_EDIT_PAGE_ACTION, ISEXIST, btn_SaveComputer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test-class_Suite-class-passed -->
+        </div> <!-- panel Test-class_Suite -->
+        <div panel-name="test-xml-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\tool\Projects\POC_Computer\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test-class Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Test Bed&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;computer.executionDriver&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Bed --&gt;
+&lt;/suite&gt; &lt;!-- Test-class Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test-class Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test Bed (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test-class Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test-class Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test-class_Suite');
+function tableData_Test-class_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'crudOperationOnFireFox')
+data.setCell(0, 2, 'computer.executionDriver')
+data.setCell(0, 3, 7127);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'crudOperationOnFireFox')
+data.setCell(1, 2, 'computer.executionDriver')
+data.setCell(1, 3, 6722);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'crudOperationOnChrome')
+data.setCell(2, 2, 'computer.executionDriver')
+data.setCell(2, 3, 6596);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'crudOperationOnChrome')
+data.setCell(3, 2, 'computer.executionDriver')
+data.setCell(3, 3, 6492);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'crudOperationOnChrome')
+data.setCell(4, 2, 'computer.executionDriver')
+data.setCell(4, 3, 5379);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'crudOperationOnFireFox')
+data.setCell(5, 2, 'computer.executionDriver')
+data.setCell(5, 3, 5328);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'crudOperationOnChrome')
+data.setCell(6, 2, 'computer.executionDriver')
+data.setCell(6, 3, 5287);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'crudOperationOnFireFox')
+data.setCell(7, 2, 'computer.executionDriver')
+data.setCell(7, 3, 5105);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'crudOperationOnChrome')
+data.setCell(8, 2, 'computer.executionDriver')
+data.setCell(8, 3, 4505);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'crudOperationOnFireFox')
+data.setCell(9, 2, 'computer.executionDriver')
+data.setCell(9, 3, 4481);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'crudOperationOnFireFox')
+data.setCell(10, 2, 'computer.executionDriver')
+data.setCell(10, 3, 4468);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'crudOperationOnFireFox')
+data.setCell(11, 2, 'computer.executionDriver')
+data.setCell(11, 3, 4435);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'crudOperationOnFireFox')
+data.setCell(12, 2, 'computer.executionDriver')
+data.setCell(12, 3, 4396);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'crudOperationOnChrome')
+data.setCell(13, 2, 'computer.executionDriver')
+data.setCell(13, 3, 4375);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'crudOperationOnChrome')
+data.setCell(14, 2, 'computer.executionDriver')
+data.setCell(14, 3, 4298);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'crudOperationOnFireFox')
+data.setCell(15, 2, 'computer.executionDriver')
+data.setCell(15, 3, 4224);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'crudOperationOnChrome')
+data.setCell(16, 2, 'computer.executionDriver')
+data.setCell(16, 3, 4216);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'crudOperationOnChrome')
+data.setCell(17, 2, 'computer.executionDriver')
+data.setCell(17, 3, 3977);
+window.suiteTableData['Test-class_Suite']= { tableData: data, tableDiv: 'times-div-Test-class_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Test-class_Suite">
+              </div> <!-- times-div-Test-class_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test-class Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Aakash has been created,   Expected:  Done! Computer BackeBase-Aakash has been created</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  BackeBase-Aakash,   Expected:  BackeBase-Aakash</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  10 Jul 2018,   Expected:  10 Jul 2018</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  10 Jul 2024,   Expected:  10 Jul 2024</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Apple Inc.,   Expected:  Apple Inc.</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Aakash Nanda has been updated,   Expected:  Done! Computer BackeBase-Aakash Nanda has been updated</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Aakash has been created,   Expected:  Done! Computer BackeBase-Aakash has been created</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Paul$123 has been created,   Expected:  Done! Computer BackeBase-Paul$123 has been created</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  BackeBase-Aakash Nanda,   Expected:  BackeBase-Aakash Nanda</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  11 Jul 2018,   Expected:  11 Jul 2018</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  05 Jul 2028,   Expected:  05 Jul 2028</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  IBM,   Expected:  IBM</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  BackeBase-Aakash,   Expected:  BackeBase-Aakash</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  10 Jul 2018,   Expected:  10 Jul 2018</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  10 Jul 2024,   Expected:  10 Jul 2024</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Apple Inc.,   Expected:  Apple Inc.</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer has been deleted,   Expected:  Done! Computer has been deleted</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Aakash Nanda has been updated,   Expected:  Done! Computer BackeBase-Aakash Nanda has been updated</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  BackeBase-Aakash Nanda,   Expected:  BackeBase-Aakash Nanda</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  11 Jul 2018,   Expected:  11 Jul 2018</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  05 Jul 2028,   Expected:  05 Jul 2028</font></i> - Validation Passed</span>
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  IBM,   Expected:  IBM</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  ,   Expected:  </font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Validation of Element:  <i><font color='Blue'>Actual:  Done! Computer BackeBase-Paul$123 has been created,   Expected:  Done! Computer BackeBase-Paul$123 has been created</font></i> - Validation Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test-class_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">computer.executionDriver</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC1 - Verify user is able to create new computer record in the application, R_URL,COMPUTERSEARCH,COM...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</span>
+                <span class="method-start">5330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC2 - Verify user is able to read details of existing computer record in the application, R_URL,COMP...)</span>
+                <span class="method-start">5382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</span>
+                <span class="method-start">9758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC3 - Verify user is able to update details of existing computer record in the application, R_URL,CO...)</span>
+                <span class="method-start">9811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</span>
+                <span class="method-start">14917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC4 - Verify user is able to validate updated computed record in the application, R_URL,COMPUTERSEAR...)</span>
+                <span class="method-start">15047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)</span>
+                <span class="method-start">19142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">crudOperationOnChrome(TC5 - Verify user is able to delete computer record in the application, R_URL,COMPUTERSEARCH,COMPUTE...)</span>
+                <span class="method-start">19346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</span>
+                <span class="method-start">23326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC6 - Verify Computer Name is mandatory field while creating new computer record, R_URL,COMPUTERSEAR...)</span>
+                <span class="method-start">23539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</span>
+                <span class="method-start">27543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC7 - Verify user is able to create new computer record with just computer name detail provided in t...)</span>
+                <span class="method-start">28007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</span>
+                <span class="method-start">32050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC8 - Verify user is not able to create computer record when invalid date for Discontinued date fiel...)</span>
+                <span class="method-start">32443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnChrome(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</span>
+                <span class="method-start">38649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crudOperationOnFireFox(TC9 - Verify user is not able to create computer record when invalid date for Introduced date field ...)</span>
+                <span class="method-start">39173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">report</span>
+                <span class="method-start">46301 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

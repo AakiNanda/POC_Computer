@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="methods">
+  <test name="Test Bed(failed)" parallel="methods">
+    <classes>
+      <class name="computer.executionDriver">
+        <methods>
+          <include name="report"/>
+          <include name="crudOperationOnChrome" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- computer.executionDriver -->
+    </classes>
+  </test> <!-- Test Bed(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->
